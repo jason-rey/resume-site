@@ -1,1 +1,212 @@
-<h1>hi</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Unity, Game Dev, Game Developer, Portfolio, Resume, Python, Software Engineer, Software Developer">
+    <meta name="author" content="Jason Abucot">
+    <meta name="description" content="Portfolio website that showcases all of my skills and completed projects">
+    <title>Jason Abucot</title>
+
+    <script src="sideNav.js" defer></script>
+
+    <script src="fadeInReveal.js" defer></script>
+
+    <link rel="stylesheet" href="styles/genericStyles.css">
+    <link rel="stylesheet" href="styles/landingPage.css">
+    <link rel="stylesheet" href="styles/aboutPage.css"> 
+    <link rel="stylesheet" href="styles/projectsPage.css">
+    <link rel="stylesheet" href="styles/contactPage.css">
+</head>
+<body>
+    <nav>
+        <span id="navOpenBtn" onclick="openNav()">☰</span>
+        
+        <div class="sideNav" id="side">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-left: 10vw; font-size: 50px">&times;</a>
+            <a href="#aboutSroll"><p>About</p></a>
+            <a href="#projectScroll"><p>Projects</p></a>
+            <a href="#contactScroll"><p>Contact</p></a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Landing Page  -->
+        <div id="introPlate">
+            <h1>Jason Abucot</h1>
+            <br>
+            <h3>An aspiring Software Enginner & Game Developer</h3>
+        </div>
+        <div class="grayColumn1" style="top: 0; left: 0;"></div>
+        <div class="grayColumn2" style="top: calc(100vh / 3); left: 0;"></div>
+        <div class="grayColumn3" style="top: calc((100vh / 3) * 2); left: 0;"></div>
+        
+        <!-- About Me page -->
+        <img id="tetrisImg" src="images/tetris-min.png" class="reveal" alt="The 4 Tetrominoes">
+        <div id="aboutSroll"></div>
+        <div id="aboutCard" class="reveal">
+            <h1>A bit of backstory...</h1>
+            <h3>
+                Having grown up playing games, it only felt 
+                natural for me to pursue a career in game development.
+                However, given the vast differences between playing a game and creating one,
+                many people are often deterred from following this path.
+            </h3>
+
+            <h3>
+                Luckily for me however, when I started programming at 17,
+                I could immediately feel a spark, something that ignited
+                my passion to create and further my skills, beit in software creation or games.
+            </h3>
+        </div>
+        <div id="techInfoCard" class="reveal">
+            <table>
+                <tr>
+                    <th colspan="2">Tools & Technologies I've used</th>
+                </tr>
+                <tr>
+                    <td>Unity/C#</td>
+                    <td>Comfortable</td>
+                </tr>
+
+                <tr>
+                    <td>Python</td>
+                    <td>Comfortable</td>
+                </tr>
+
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Familiar</td>
+                </tr>
+
+                <tr>
+                    <td>Javascript</td>
+                    <td>Familiar</td>
+                </tr>
+
+                <tr>
+                    <td>Go</td>
+                    <td>Familiar</td>
+                </tr>
+                
+                <tr>
+                    <td>Solidity</td>
+                    <td>Familiar</td>
+                </tr>
+
+                <tr>
+                    <td>Ganache</td>
+                    <td>Familiar</td>
+                </tr>
+
+                <tr>
+                    <td>Git</td>
+                    <td>Familiar</td>
+                </tr>
+  
+            </table>
+        </div>
+
+        <!-- Projects Page -->
+        <div class="grayColumnRev1" style="top: calc((100vh / 3) * 6); left: 0;"></div>
+        <div class="grayColumnRev2" style="top: calc((100vh / 3) * 7); left: 0;"></div>
+        <div class="grayColumnRev3" style="top: calc((100vh / 3) * 8); left: 0;"></div>
+
+        <div id="projectScroll"></div>
+        <div id="projectsCard">
+            <h2 style="text-align: center" class="reveal">Here's a collection of some projects I've completed</h2>
+            <div id="sudokuShowcase" class="reveal">
+                <img id="sudokuImg" src="images/sudoku.png" alt="Picture of my implementation of Sudoku">
+                <div id="sTextContainer">
+                    <h2 class="sudokuText">Sudoku</h2>
+                    <h3 class="sudokuText">
+                        This implementation of Sudoku created in Unity
+                        utilizes a backtracking algorithm in order to solve the board,
+                        allowing it to discern between correct and incorrect guesses.
+                        In addition to that, support for Sudoku strings was implemented,
+                        allowing for the input and use of custom Sudoku puzzles.
+                    </h3>
+                    <h3 class="sudokuText"><a href="https://github.com/jason-rey/Sudoku" target="_blank">View code here</a></h3>
+                </div>
+            </div>
+
+            <div id="chessShowcase" class="reveal">
+                <img id="chessImg" src="images/chess.PNG" alt="Picture of my implementation of Sudoku">
+                <div id="cTextContainer">
+                    <h2 class="chessText">Chess</h2>
+                    <h3 class="chessText">
+                        Created in Python, this game was made with the principles of Object Oriented Programming in mind.
+                        As such, standard Object Oriented features such as inheritance and polymorphism play a large part
+                        in the overall design of this project's architecture, leading to an experience that bettered my overall 
+                        understanding of the design pattern as a whole.
+                        
+                    </h3>
+                    <h3><a href="https://github.com/jason-rey/chess" target="_blank">View code here</a></h3>
+                </div>
+            </div>
+
+            <div id="asteroidsShowcase" class="reveal">
+                <img id="asteroidsImg" src="images/asteroids.png" alt="Picture of my Asteroids game">
+                <div id="aTextContainer">
+                    <h2 class="asteroidsText">Asteroids</h2>
+                    <h3 class="asteroidsText">
+                        Being one of my first endeavours in Unity, this project is on the simpler side.
+                        However despite being simple, this project was also the first in which I collaborated
+                        with a friend, him creating the art assets whereas I handled the programming. This collaborative effort
+                        at least somewhat taught me the importance of clear communication between team members and
+                        the change in mindset required to complete a project in a team, as opposed to by myself.
+                    </h3>
+                    <h3 class="asteroidsText"><a href="https://github.com/jason-rey/Asteroids" target="_blank">View code here</a></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="grayColumn1" style="top: calc((100vh / 3) * 9); left: 0;"></div>
+        <div class="grayColumn1" style="top: calc((100vh / 3) * 10); left: 0;"></div>
+        <div class="grayColumn2" style="top: calc((100vh / 3) * 11); left: 0;"></div>
+        <div class="grayColumn3" style="top: calc((100vh / 3) * 12); left: 0;"></div>
+
+        <!-- Contact Page -->
+        <div id="contactScroll"></div>
+        <div id="contactCard">
+            <h1 class="reveal">Get in contact</h1>
+            <h3 class="reveal">If you'd like to reach out, collaborate on a project, or just chat, please feel free to contact me!</h3>
+            <div id="contactContainer" class="reveal">
+                <div id="myInfo">
+                    <h3>Email: jabucot0@gmail.com</h3>
+                    <h3>Phone Number: (778)-866-1262</h3>
+                    <h3>Github: <a href="https://github.com/jason-rey" target="_blank">github.com/jason-rey</a></h3>
+                </div>
+                <div id="contactForm">
+                    <form>
+                        <fieldset>
+                            <input type="text" placeholder="Email">
+                            <br>
+                            <br>
+                            <input type="text" placeholder="Phone Number (Optional)">
+                            <br>
+                            <br>
+
+                            <textarea rows="20" cols="40" placeholder="Message (Optional)"></textarea>
+                            
+                            <br>
+
+                            <label>
+                                <button id="submit" type="submit">Submit</button>
+                            </label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <span>Jason Abucot</span>
+        <br>
+        <br>
+        <span>Please don't spread my provided information with malicious intent</span>
+    </footer>
+</body>
+</html>

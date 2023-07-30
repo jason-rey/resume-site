@@ -1,0 +1,124 @@
+#contactCard {
+    text-align: center;
+    margin-top: 70vh;
+    padding-bottom: 100vh;
+}
+
+#contactContainer {
+    margin-top: 10vh;
+}
+
+#myInfo {
+    float: left;
+    
+    margin-top: 15vh;
+    height: 100px;
+    margin-left: 10vw;
+
+    width: 35%;
+}
+
+#myInfo a {
+    color: #94C9A9;
+}
+
+#contactForm {
+    text-align: left;
+    float: right;
+    
+    height: 100px;
+    margin-right: 10vw;
+    
+    width: 35%;
+}
+
+#contactForm input {
+   background: transparent;
+   border: none;
+   color: white;
+
+   border-color: white;
+   border-style: solid;
+   border-width: 0;
+   border-bottom-width: 1px;
+   width: 19vw;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    color: white;
+    background: transparent;
+    border: none;
+    resize: none;
+
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    width: 19vw;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button {
+    transition: 0.3s;
+    color: white;
+    width: 10vw;
+    margin-top: 2vh;
+    background: transparent;
+
+    border-style: solid;
+}
+
+button:hover {
+    transition: 0.3s;
+    background-color: gray;
+}
+
+button:active {
+    transition: 0.3s;
+    background-color: blue;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #myInfo {
+        width: 45%;
+    }
+
+    #contactForm input {
+        width: 100%;
+    }
+
+    #contactForm textarea {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #myInfo {
+        margin-top: 5%;
+        margin-left: 5vw;
+        width: 45vw;
+        font-size: 3.5vw;
+    }
+
+    #contactForm input {
+        width: 100%;
+        font-size: 2.25vw;
+    }
+
+    #contactForm textarea {
+        font-size: 2.25vw;
+        width: 100%;
+        height: 25vw;
+    }
+
+    button {
+        font-size: 2.25vw;
+        width: 15vw;
+    }
+}

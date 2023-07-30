@@ -1,0 +1,93 @@
+#tetrisImg {
+    position: absolute;
+    top: 65vh;
+    left: 0;
+    overflow-x: hidden;
+
+    /* height: 150vh; */
+}
+
+#aboutCard {
+    text-align: center;
+
+    padding-top: 10vh;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-bottom: 10vh;
+    
+    height: 380px;
+    width: 450px;
+}
+
+fieldset {
+    border-width: 0;
+}
+
+#techInfoCard {
+    /* text-align: center; */
+    margin-left: 11.25vw;
+
+    font-size: 1.25vw;
+}
+
+#techInfoCard td:nth-of-type(2){
+    text-align: right;
+}
+
+#techInfoCard th {
+    padding: 1.5vh;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #tetrisImg {
+        height: 50%;
+        top: 143%;
+        left: 5%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #aboutCard {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #techInfoCard {
+        text-align: center;
+        font-size: 150%;
+        margin-top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #tetrisImg {
+        display: none;
+    }
+
+    #aboutCard {
+        margin-left: auto;
+        margin-right: auto;
+
+        min-height: 100px;
+        height: auto;
+        /* height: 25vh; */
+        width: 75%;
+    }
+
+    #techInfoCard {
+        font-size: calc(15px + 1vw);
+        
+        margin-top: 25%;
+        margin-left: 20%;
+
+        width: 50vw;
+    }
+}
+
+
+

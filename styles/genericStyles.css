@@ -1,0 +1,155 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgba(10, 10, 10, 0.9);
+    font-family: "Anonymous Pro";
+    color: white;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(../fonts/AnonymousPro-Regular.ttf);
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+nav {
+    z-index: 100;
+    position: fixed;
+    color: white;
+    top: 0;
+    left: 0;
+}
+
+#navOpenBtn {
+    transition: color 0.25s ease;
+    position: absolute;
+    color: white;
+    font-size: 70px;
+
+    margin-left: 20px;
+}
+
+#navOpenBtn:hover {
+    transition: color 0.25s ease;
+    color: gray;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    transition: color 0.25s ease;
+    color: gray;
+}
+
+.sideNav {
+    position: fixed;
+    background-color: rgba(10, 10, 10, 0.5);
+    transition: 0.3s;
+    height: 100vh;
+    width: 0;
+
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.sideNav a {
+    display: block;
+}
+
+.grayColumn1 {
+    background-color: rgba(75, 75, 75, 0.1);
+    z-index: -1;
+
+    position: absolute;
+    
+    height: calc(100vh / 3);
+    width: 100%;
+}
+
+.grayColumn2 {
+    background-color: rgba(75, 75, 75, 0.05);
+    z-index: -1;
+    
+    position: absolute;
+    
+    height: calc(100vh / 3);
+    width: 100vw;
+}
+
+.grayColumn3 {
+    background-color: rgba(75, 75, 75, 0.01);
+    z-index: -1;
+    
+    position: absolute;
+    
+    height: calc(100vh / 3);
+    width: 100vw;
+}
+
+.grayColumnRev1 {
+    background-color: rgba(75, 75, 75, 0.01);
+    z-index: -1;
+
+    position: absolute;
+    
+    height: calc(100vh / 3);
+    width: 100vw;
+}
+
+.grayColumnRev2 {
+    background-color: rgba(75, 75, 75, 0.05);
+    z-index: -1;
+    
+    position: absolute;
+    top: calc((100vh / 3) * 7);
+    left: 0;
+    
+    height: calc(100vh / 3);
+    width: 100vw;
+}
+
+.grayColumnRev3 {
+    background-color: rgba(75, 75, 75, 0.1);
+    z-index: -1;
+    
+    position: absolute;
+    top: calc((100vh / 3) * 8);
+    left: 0;
+    
+    height: calc(100vh / 3);
+    width: 100vw;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 50px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 1024px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
