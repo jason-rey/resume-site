@@ -33,24 +33,28 @@
     width: 0;
 }
 
-#chessShowcase {
+#chatSiteShowcase {
     margin-top: 20vh;
     margin-left: 0;
     padding-right: 15vw;
+    overflow: hidden;
 }
 
-#chessImg {
+#chatSiteImg {
     float: right;
     border-style: solid;
     border-color: rgba(75, 75, 75, 0.25);
     border-width: 5px;
     
     height: 350px;
+    width: 550px;
 }
 
 #cTextContainer {
+    float: right;
     padding-top: 8vh;
-    margin-left: 27vw;
+    /* margin-left: 27vw; */
+    /* margin-right: 5vw; */
 
     width: 35vw;
 }
@@ -73,8 +77,11 @@
     height: 350px;
 }
 
+#aTextContainer {
+    width: 30vw;
+}
 .asteroidsText {
-    margin-left: 38vw;
+    margin-left: 41vw;
     width: 35vw;
 }
 
@@ -128,7 +135,7 @@
         margin-left: 50px;
     }
 
-    .chessText {
+    .chatSiteText {
         width: 250px;
     }
 
@@ -146,12 +153,12 @@
         height: auto;
     }
 
-    #chessShowcase {
+    #chatSiteShowcase {
         /* padding: calc(1vw / 5); */
         padding-right: 7vw;
     }
 
-    #chessImg {
+    #chatSiteImg {
         width: 85vw;
         height: auto;
     }

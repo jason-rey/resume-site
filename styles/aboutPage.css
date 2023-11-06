@@ -1,10 +1,8 @@
 #tetrisImg {
+    width: 100%;
     position: absolute;
-    top: 65vh;
-    left: 0;
-    overflow-x: hidden;
-
-    /* height: 150vh; */
+    top: 100vh;
+    left: 15%;
 }
 
 #aboutCard {
