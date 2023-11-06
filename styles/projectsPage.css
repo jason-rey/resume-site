@@ -112,7 +112,8 @@
     }
 
     #cTextContainer {
-        clear: right;
+        /* clear: right; */
+        float: left;
     }
 
     #aTextContainer {
@@ -135,8 +136,11 @@
         margin-left: 50px;
     }
 
-    .chatSiteText {
-        width: 250px;
+    #cTextContainer {
+        margin-left: 50px;
+    }
+    .chatSiteText { 
+        width: 300px;
     }
 
     .asteroidsText {
