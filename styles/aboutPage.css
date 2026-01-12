@@ -5,12 +5,21 @@
     left: 15%;
 }
 
+#aboutContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-left: 11.25vw;
+}
+
 #aboutCard {
     text-align: center;
 
     padding-top: 10vh;
     margin-top: 10vh;
-    margin-left: 10vw;
+    /* margin-left: 10vw; */
     margin-bottom: 10vh;
     
     height: 380px;
@@ -22,9 +31,6 @@ fieldset {
 }
 
 #techInfoCard {
-    /* text-align: center; */
-    margin-left: 11.25vw;
-
     font-size: 1.25vw;
 }
 

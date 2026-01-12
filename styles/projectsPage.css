@@ -7,10 +7,10 @@
 }
 
 #sudokuShowcase {
+    display: flex;
     margin-top: 10vh;
     margin-right: 0;
     
-    width: 0;
     padding-left: 15vw;
 }
 
@@ -24,16 +24,17 @@
 }
 
 .sudokuText {
-    margin-left: 25vw;
+    margin-left: 50px;
     width: 35vw;
 }
 
 #sTextContainer {
-    padding-top: 8vh;
+    padding-top: 75px;
     width: 0;
 }
 
 #chatSiteShowcase {
+    display: flex;
     margin-top: 20vh;
     margin-left: 0;
     padding-right: 15vw;
@@ -51,21 +52,21 @@
 }
 
 #cTextContainer {
-    float: right;
-    padding-top: 8vh;
+    margin-left: 23vw;
+    padding-top: 75px;
     /* margin-left: 27vw; */
-    /* margin-right: 5vw; */
+    margin-right: 50px;
 
     width: 35vw;
 }
 
 #asteroidsShowcase {
+    display: flex;
     margin-top: 16.5vh;
     margin-right: 0;
     
     width: 100%;
     padding-left: 15vw;
-    width: 0;
 }
 
 #asteroidsImg {
@@ -78,10 +79,10 @@
 }
 
 #aTextContainer {
-    width: 30vw;
+    padding-top: 75px;
 }
 .asteroidsText {
-    margin-left: 41vw;
+    margin-left: 50px;
     width: 35vw;
 }
 

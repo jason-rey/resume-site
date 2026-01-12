@@ -24,7 +24,9 @@
         <span id="navOpenBtn" onclick="openNav()">☰</span>
         
         <div class="sideNav" id="side">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-left: 10vw; font-size: 50px">&times;</a>
+            <div style="display: flex; width: 100%; justify-content: flex-end;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-right: 25px; width: fit-content; font-size: 50px">&times;</a>
+            </div>
             <a href="#aboutSroll"><p>About</p></a>
             <a href="#projectScroll"><p>Projects</p></a>
             <a href="#contactScroll"><p>Contact</p></a>
@@ -45,72 +47,84 @@
         <!-- About Me page -->
         <img id="tetrisImg" src="images/tetris-min.png" class="reveal" alt="The 4 Tetrominoes">
         <div id="aboutSroll"></div>
-        <div id="aboutCard" class="reveal">
-            <h1>A bit of backstory...</h1>
-            <h3>
-                Having grown up playing games, it only felt 
-                natural for me to pursue a career in game development.
-                However, given the vast differences between playing a game and creating one,
-                many people are often deterred from following this path.
-            </h3>
+        <div id="aboutContent">
+            <div id="aboutCard" class="reveal">
+                <h1>A bit of backstory...</h1>
+                <h3>
+                    Having grown up playing games, it only felt 
+                    natural for me to pursue a career in game development.
+                    However, given the vast differences between playing a game and creating one,
+                    many people are often deterred from following this path.
+                </h3>
+    
+                <h3>
+                    Luckily for me however, when I started programming at 17,
+                    I could immediately feel a spark, something that ignited
+                    my passion to create and further my skills, beit in software creation or games.
+                </h3>
+            </div>
+            <div id="techInfoCard" class="reveal">
+                <table>
+                    <tr>
+                        <th colspan="2">Some Languages & Tools I've Used</th>
+                    </tr>
+    
+                    <tr>
+                        <td>Python</td>
+                        <td>Comfortable</td>
+                    </tr>
+    
+                    <tr>
+                        <td>C#</td>
+                        <td>Comfortable</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>C++</td>
+                        <td>Comfortable</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Javascript</td>
+                        <td>Comfortable</td>
+                    </tr>
 
-            <h3>
-                Luckily for me however, when I started programming at 17,
-                I could immediately feel a spark, something that ignited
-                my passion to create and further my skills, beit in software creation or games.
-            </h3>
-        </div>
-        <div id="techInfoCard" class="reveal">
-            <table>
-                <tr>
-                    <th colspan="2">Tools & Technologies I've used</th>
-                </tr>
+                    <tr>
+                        <td>Typescript</td>
+                        <td>Comfortable</td>
+                    </tr>
 
-                <tr>
-                    <td>Python</td>
-                    <td>Comfortable</td>
-                </tr>
-
-                <tr>
-                    <td>Unity/C#</td>
-                    <td>Comfortable</td>
-                </tr>
-                
-                <tr>
-                    <td>Git</td>
-                    <td>Familiar</td>
-                </tr>
-
-                <tr>
-                    <td>C++</td>
-                    <td>Familiar</td>
-                </tr>
-                
-                <tr>
-                    <td>Java</td>
-                    <td>Familiar</td>
-                </tr>
-
-                <tr>
-                    <td>Flask</td>
-                    <td>Familiar</td>
-                </tr>
-
-                <tr>
-                    <td>HTML/CSS</td>
-                    <td>Familiar</td>
-                </tr>
-
-                <tr>
-                    <td>Javascript</td>
-                    <td>Familiar</td>
-                </tr>
-                
-                <tr>
-                    <td>Docker</td>
-                    <td>Learning</td>
-                </tr>
-            </table>
+                    <tr>
+                        <td>HTML/CSS</td>
+                        <td>Comfortable</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Git</td>
+                        <td>Comfortable</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Perforce</td>
+                        <td>Comfortable</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Java</td>
+                        <td>Familiar</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Flask</td>
+                        <td>Familiar</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Docker</td>
+                        <td>Learning</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <!-- Projects Page -->
@@ -137,7 +151,6 @@
             </div>
 
             <div id="chatSiteShowcase" class="reveal">
-                <img id="chatSiteImg" src="images/chat-site.PNG" alt="Picture of my implementation of Sudoku">
                 <div id="cTextContainer">
                     <h2 class="chatSiteText">Chatroom Site</h2>
                     <h3 class="chatSiteText">
@@ -150,6 +163,7 @@
                     <h3><a class="chatSiteText" href="https://jason-rey.github.io/chat-site/" target="_blank">Try it out</a></h3>
                     <h3><a class="chatSiteText" href="https://github.com/jason-rey/chat-site" target="_blank">View code here</a></h3>
                 </div>
+                <img id="chatSiteImg" src="images/chat-site.PNG" alt="Picture of my implementation of Sudoku">
             </div>
             
             <div id="chatServiceShowcase" class="reveal"></div>
